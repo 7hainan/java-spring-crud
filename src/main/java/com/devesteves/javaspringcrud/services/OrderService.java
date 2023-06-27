@@ -18,7 +18,7 @@ public class OrderService {
     }
 
     public Order findById(Long id){
-        Optional<Order> optUser = orderRepository.findById(id);
-        return optUser.orElse(null);
+        Optional<Order> optOrder = orderRepository.findById(id);
+        return optOrder.orElse(null);
     }
 }
